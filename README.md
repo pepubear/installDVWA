@@ -7,7 +7,7 @@ Prerequisite: Kali Linux is installed on bare metal (installed directory onto th
 - Drag and drop the “installDVWA.sh” from your Windows Desktop to your Kali Virtual Machine Desktop
 - Inside of your Kali Virtual Machine, right-click the desktop and select the option “Open terminal here”
   
-### 2. IF you are in a regular install of Kali on your computer
+### 2. IF you are in a regular bare-metal install of Kali on your computer
 - Inside of your Kali Desktop right-click the desktop and select the option “Open terminal here”
 
 ### 3. After step 1 and or 2 is completed, inside of the terminal, type the commands: 
