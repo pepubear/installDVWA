@@ -7,7 +7,7 @@ NC='\033[0m'
 
 echo " "
 echo " "
-echo -e "${PURP}===== Updating System Repository and Installing Necessary Packages =====${NC}"
+echo -e "${PURP}|=====| Updating System Repository and Installing Necessary Packages |=====|${NC}"
 echo " "
 echo " "
 sleep 2
@@ -17,7 +17,7 @@ sudo apt install -y apache2 mariadb-server mariadb-client php php-mysqli php-gd 
 
 echo " "
 echo " "
-echo -e "${PURP}===== Downloading DVWA Packages===== ${NC}"
+echo -e "${PURP}|=====| Downloading DVWA Packages |=====|${NC}"
 echo " "
 echo " "
 sleep 2
@@ -27,7 +27,7 @@ wget https://github.com/ethicalhack3r/DVWA/archive/master.zip
 unzip master.zip
 
 echo " "
-echo -e "${PURP}===== Configuing  DVWA =====${NC}"
+echo -e "${PURP}|=====| Configuing  DVWA |=====|${NC}"
 echo " "
 sleep .5
 echo "sudo rm -rf /var/www/html"
@@ -48,7 +48,7 @@ sudo cp /var/www/html/config/config.inc.php.dist /var/www/html/config/config.inc
 
 echo " "
 echo " "
-echo -e "${PURP}===== Setting up DVWA database =====${NC}"
+echo -e "${PURP}|=====| Setting up DVWA database |=====|${NC}"
 echo " "
 echo " "
 sleep .5
@@ -61,7 +61,7 @@ sudo mysql -u root -e "flush privileges;"
 
 echo " "
 echo " "
-echo -e "${PURP}===== Configuring DVWA Settings =====${NC}"
+echo -e "${PURP}|=====| Configuring DVWA Settings |=====|${NC}"
 echo " "
 echo " "
 sleep .5
@@ -70,7 +70,7 @@ sudo sed -i "s/^\$db_password.*/\$db_password = 'p@ssw0rd';/" /var/www/html/conf
 
 echo " "
 echo " "
-echo -e "${PURP}===== Modifying PHP Configurations =====${NC}"
+echo -e "${PURP}|=====| Modifying PHP Configurations |=====|${NC}"
 echo " "
 echo " "
 sleep .5
@@ -79,7 +79,7 @@ sudo sed -i "s/^upload_max_filesize.*/upload_max_filesize = 10M/" /etc/php/8.2/a
 
 echo " "
 echo " "
-echo -e "${PURP}===== Restarting and Finalizing Installation =====${NC}"
+echo -e "${PURP}|=====| Restarting and Finalizing Installation |=====|${NC}"
 echo " "
 echo " "
 sleep .5
